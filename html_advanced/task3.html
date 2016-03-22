@@ -12,7 +12,7 @@
 <table width="100%" cellspacing="0" cellpadding="2">
   <tr>
   <td align="right" width="100">
-    Surname:
+    <label for="surname">Surname:</label>
   </td>
   <td>
     <input type="text" name="surname" value="Input surname">
@@ -20,7 +20,7 @@
   </tr>
   <tr>
   <td align="right">
-    First name:
+    <label for="firstname">First name:</label>
   </td>
   <td>
     <input type="text" name="firstname" value="Input first name">
@@ -28,7 +28,7 @@
   </tr>
   <tr>
   <td align="right">
-    Middle name:
+    <label for="middleame">Middle name:</label>
   </td>
   <td>
     <input type="text" name="middleame" value="Input middlename">
@@ -36,7 +36,7 @@
   </tr>
   <tr>
   <td align="right">
-    You are
+    <label for="sex">You are</label>
   </td>
   <td>
     <input type="radio" name="sex" value="male" checked>Male <br>
@@ -45,7 +45,7 @@
   </tr>
   <tr>
   <td align="right">
-    Age:
+    <label for="age">Age:</label>
   </td>
   <td>
     <input type="number" name="age" min="18" max="101">
@@ -66,7 +66,7 @@
   </tr>
   <tr>
   <td align="right">
-    City
+    <label for="city">City</label>
   </td>
   <td>
     <input type="radio" value="rzn" name="city">Ryazan
@@ -75,7 +75,7 @@
   </tr>
   <tr>
   <td align="right">
-    Photography
+    <label for="photo">Photography</label>
   </td>
   <td>
     <input type="file" name="photo">
@@ -126,7 +126,7 @@
   <table width="100%" cellspacing="0" cellpadding="2">
     <tr>
     <td align="right" width="100">
-      Site:
+      <label for="site">Site:</label>
     </td>
     <td>
       <input type="text" name="site">
@@ -134,7 +134,7 @@
     </tr>
     <tr>
     <td align="right">
-      Email:
+      <label for="email">Email:</label>
     </td>
     <td>
       <input type="text" name="email">
@@ -142,7 +142,7 @@
     </tr>
     <tr>
     <td align="right">
-      Phone:
+      <label for="phone">Phone:</label>
     </td>
     <td>
       <input type="text" name="phone">
@@ -150,8 +150,8 @@
     </tr>
   </table>
 </fieldset>
-Password:
-<input type="password" required placeholder="Password">
+<label for="password">Password:</label>
+<input type="password" required placeholder="Password" name="password">
 <br>
 <input type="submit"> <input type="reset">
 </form>
