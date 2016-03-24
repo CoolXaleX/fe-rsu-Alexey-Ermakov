@@ -15,7 +15,7 @@
     <label for="surname">Surname:</label>
   </td>
   <td>
-    <input type="text" name="surname" value="Input surname">
+    <input type="text" name="surname" id="surname" value="Input surname">
   </td>
   </tr>
   <tr>
@@ -23,7 +23,7 @@
     <label for="firstname">First name:</label>
   </td>
   <td>
-    <input type="text" name="firstname" value="Input first name">
+    <input type="text" name="firstname" id="firstname" value="Input first name">
   </td>
   </tr>
   <tr>
@@ -31,7 +31,7 @@
     <label for="middleame">Middle name:</label>
   </td>
   <td>
-    <input type="text" name="middleame" value="Input middlename">
+    <input type="text" name="middleame" id="middleame" value="Input middlename">
   </td>
   </tr>
   <tr>
@@ -39,7 +39,7 @@
     <label for="sex">You are</label>
   </td>
   <td>
-    <input type="radio" name="sex" value="male" checked>Male <br>
+    <input type="radio" name="sex" id="sex" value="male" checked>Male <br>
     <input type="radio" name="sex" value="female">Female
   </td>
   </tr>
@@ -48,7 +48,7 @@
     <label for="age">Age:</label>
   </td>
   <td>
-    <input type="number" name="age" min="18" max="101">
+    <input type="number" name="age" id="age min="18" max="101">
   </td>
   </tr>
   <tr>
@@ -69,7 +69,7 @@
     <label for="city">City</label>
   </td>
   <td>
-    <input type="radio" value="rzn" name="city">Ryazan
+    <input type="radio" value="rzn" id="city" name="city">Ryazan
     <input type="radio" value="msc" name="city">Moscow
   </td>
   </tr>
@@ -78,7 +78,7 @@
     <label for="photo">Photography</label>
   </td>
   <td>
-    <input type="file" name="photo">
+    <input type="file" name="photo" id="photo">
   </td>
   </tr>
   <tr>
@@ -91,7 +91,7 @@
     <label for="technologies">Title</label>
   </td>
   <td>
-    <select name="technologies" size="8">
+    <select name="technologies" id="technologies" size="8">
       <optgroup label="Technologies">
         <option value="2">Web master</option>
         <option value="3">Database Administrator</option>
@@ -129,7 +129,7 @@
       <label for="site">Site:</label>
     </td>
     <td>
-      <input type="text" name="site">
+      <input type="text" id="site" name="site">
     </td>
     </tr>
     <tr>
@@ -137,7 +137,7 @@
       <label for="email">Email:</label>
     </td>
     <td>
-      <input type="text" name="email">
+      <input type="text" id="email" name="email">
     </td>
     </tr>
     <tr>
@@ -145,13 +145,13 @@
       <label for="phone">Phone:</label>
     </td>
     <td>
-      <input type="text" name="phone">
+      <input type="text" id="phone" name="phone">
     </td>
     </tr>
   </table>
 </fieldset>
 <label for="password">Password:</label>
-<input type="password" required placeholder="Password" name="password">
+<input type="password" id="password" required placeholder="Password" name="password">
 <br>
 <input type="submit"> <input type="reset">
 </form>
