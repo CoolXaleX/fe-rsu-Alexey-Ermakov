@@ -1,0 +1,46 @@
+#maintheme{
+  background-image: url(http://www.dumuzone.com/wp-content/uploads/Yellow-BMW-i8-11.jpg);
+  background-size: cover;
+  background-repeat: repeat-x;
+}
+h1 {
+  font-family:sans-serif;
+  font-style: italic;
+  background-color:#1ed42a;
+  width: 20vw;
+  height: 200px;
+  margin: 5px;
+  padding: 5px;
+  text-align: right;
+  text-decoration: underline;
+}
+h1:hover{
+  text-shadow: 1px 1px 50px #f51818;
+}
+.text{
+  background-color:rgba(30, 212, 179, .7);
+  height: 60vh;
+  font-size: 120%;
+  font-variant: small-caps;
+  font-variant: lighter;
+}
+p.text{
+  font-family: "Arial","Times New Roman", sans-serif;
+  color:rgb(255, 227, 82);
+  line-height: 2em;
+}
+span{
+  text-decoration: overline;
+  color:rgb(246, 139, 223);
+}
+#upper:hover{
+  direction:rtl;
+  text-transform: uppercase;
+  color:rgb(5, 0, 255);
+  letter-spacing:1em;
+}
+#space{
+  word-spacing: 20px;
+  white-space: pre-line;
+  vertical-align: super;
+}
