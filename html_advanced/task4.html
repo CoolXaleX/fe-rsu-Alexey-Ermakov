@@ -116,7 +116,8 @@
                <br>
                <label>Middle name <input type="text" name="mname"></label>
                <br>
-               You are<input type="radio" value="male" name="gender" checked>male <input type="radio" value="female" name="gender">female
+               You are<label><input type="radio" value="male" name="gender" checked>male</label>
+               <label><input type="radio" value="female" name="gender">female</label>
                <br>
                <label>Age <input type="number" name="age" max="101" min="18"></label>
                <br>
@@ -130,12 +131,13 @@
                    <option value="China">China</option>
                </datalist>
                <br>
-               City<input type="radio" value="ryazan" name="city" checked>Ryazan <input type="radio" value="moscow" name="city">Moscow
+               City<label><input type="radio" value="ryazan" name="city" checked>
+               Ryazan </label><label><input type="radio" value="moscow" name="city">Moscow</label>
                <br>
-               Protography <input type="file" name="photo">
+               <label>Protography <input type="file" name="photo"></label>
                <hr>
                <label for="specialty">Title</label>
-               <select name="specialty" multiple >
+               <select name="specialty" multiple id="specialty">
                    <optgroup label="Techologies">
                        <option value="wbmaster">Web master</option>
                        <option value="dbadm">Database Administration</option>
@@ -149,7 +151,7 @@
                </select>
                <br>
                <br>
-               Salary <input type="range" name="salary">
+               <label>Salary <input type="range" name="salary"></label>
                <br>
                <textarea name="infromationperson" rows="15" cols="50" placeholder="Tell us about yourself..."></textarea>
            </fieldset>
