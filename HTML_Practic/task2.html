@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Table layout </title>
+</head>
+<body>
+    <table border="1" width="100%">
+        <tbody>
+        <tr>
+            <td width="24%" style="font-size:140%;color:#5F9EA0;vertical-align:top">Task description:<ul>
+                <li><a href="#task1">Prints 10 names with a line break between each name.
+                    <br>The list should be alphabetized,
+                    <br>and to do this place a subscripted number
+                    <br>next to each name based on where it will go
+                    <br>in the alphabetized list. (Example: Alan 1).
+                    <br>Print first, the unalphabetized list
+                    <br>with a subscript number next to each name,
+                    <br>then the alphabetized list.
+                    <br>Both lists should have an level heading.</a></li>
+                <li><a href="#task2">Print two lists with any information you want.
+                    <br>One list should be an ordered list,
+                    <br>the other list should be an unordered list</a></li>
+                <li><a href="#task3">Print some preformatted text of your choosing</a></li>
+                <li><a href="#task4">Print a definition list with 5 items</a></li>
+                </ul>
+            </td>
+            <td> <h1 align="center">Task 2</h1>
+    <div  align="right"><a href="#down" id="Top">Down the page</a></div>
+    <h3 id="task1">List Names</h3>
+    <ol>
+        <li>Alan 1<br><hr></li>
+        <li>Alex 2<br><hr></li>
+        <li>Alexis 3<br><hr></li>
+        <li>Alyssa 4<br><hr></li>
+        <li>Ava 5<br><hr></li>
+        <li>Daniel 6<br><hr></li>
+        <li>David 7<br><hr></li>
+        <li>Chloe 8<br><hr></li>
+        <li>Logan 9<br><hr></li>
+        <li>Tyler 10</li>
+    </ol>
+    <h3 id="task2">List country (Ordered list)</h3>
+    <ol>
+        <li>Russia</li>
+        <li>England</li>
+        <li>USA</li>
+        <li>German</li>
+    </ol>
+    <h3>List city (Unordered list)</h3>
+    <ul>
+        <li>Moscow</li>
+        <li>New York</li>
+        <li>Berlin</li>
+        <li>London</li>
+    </ul>
+    <h3 id="task3">An excerpt from the code (Preformatted text)</h3>
+    <pre>public void updateGlassesFuel() {
+		if (pickUpCanister(carHero, carEnemy, canister) == 1) {
+			initializeCanister();
+			gameStats.setAmountFuel(gameStats.getAmountFuel());
+			amountFuel = gameStats.getAmountFuel();
+			// System.out.println("AF" + gameStats.getAmountFuel());
+		}
+		if (pickUpCanister(carHero, carEnemy, canister) == 2) {
+			initializeCanister();
+			gameStats.removeAmountFuel(gameStats.getAmountFuel());
+			amountFuel = gameStats.getAmountFuel();
+			// System.out.println("AF" + gameStats.getAmountFuel());
+		}
+	}</pre>
+    <h3 id="task4">Definition list</h3>
+    <dl>
+        <dt>Volvo</dt>
+            <dd>xc90</dd>
+            <dd>s60</dd>
+        <dt>Toyota</dt>
+            <dd>Camry</dd>
+            <dd>Corolla</dd>
+            <dd>Hilux</dd>
+    </dl>
+    <div align="right"><a href="#top" id="down">Back to top </a></div>
+    <h4 align="center">Copyright ©2016 <a href="https://vk.com/xalex">Ermakov Alexey</a></h4></td>
+        </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
