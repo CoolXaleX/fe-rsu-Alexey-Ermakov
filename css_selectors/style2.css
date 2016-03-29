@@ -1,0 +1,18 @@
+#main{
+  color: #252525
+}
+#table{
+  text-align: center;
+}
+.header{
+  background-color: #c9e2f5
+}
+.body:nth-child(2n+1) {
+  background: #acaaaa;
+}
+.body{
+  background: #d1d1d1;
+}
+.body:hover{
+  background: rgba(164, 163, 199, 0.5);
+}

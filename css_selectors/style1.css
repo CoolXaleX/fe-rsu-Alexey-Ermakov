@@ -1,0 +1,18 @@
+body{
+  color: #252525
+}
+table{
+  text-align: center;
+}
+th{
+  background-color: #c9e2f5
+}
+tr:nth-child(2n + 1) {
+  background: #acaaaa;
+}
+tr{
+  background: #d1d1d1;
+}
+tr:hover{
+  background: rgba(7, 0, 255, 0.5);
+}
