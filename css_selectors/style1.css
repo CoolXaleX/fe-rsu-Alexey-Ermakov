@@ -1,18 +1,37 @@
 body{
-  color: #252525
+  color: #6E848F;
+  font-family: Arial;
+  font-size: 15px;
 }
 table{
   text-align: center;
 }
-th{
-  background-color: #c9e2f5
-}
 tr:nth-child(2n + 1) {
-  background: #acaaaa;
+  background: #E9EDF3;
 }
 tr{
-  background: #d1d1d1;
+  height:50px;
+  background: #F2F6F9;
 }
 tr:hover{
-  background: rgba(7, 0, 255, 0.5);
+  background: rgba(227, 230, 231, 1);
+}
+th:nth-child(1){
+  width: 128px;
+}
+th:nth-child(3){
+  width: 190px;
+}
+th:nth-child(2){
+  width: 131px;
+}
+th:nth-child(4){
+  width: 111px;
+}
+table tr:first-child{
+  height:25px;
+  font-variant: small-caps;
+  font-weight:100;
+  font-style: normal;
+  font-size: 13px;
 }

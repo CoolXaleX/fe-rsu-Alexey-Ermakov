@@ -1,18 +1,37 @@
 #main{
-  color: #252525
+  color: #6E848F;
+  font-family: Arial;
+  font-size: 15px;
 }
 #table{
   text-align: center;
 }
-.header{
-  background-color: #c9e2f5
-}
-.body:nth-child(2n+1) {
-  background: #acaaaa;
+.body:nth-child(2n + 1) {
+  background: #E9EDF3;
 }
 .body{
-  background: #d1d1d1;
+  height:50px;
+  background: #F2F6F9;
 }
 .body:hover{
-  background: rgba(164, 163, 199, 0.5);
+  background: rgba(227, 230, 231, 1);
+}
+#header{
+  height:25px;
+  font-variant: small-caps;
+  font-weight:100;
+  font-style: normal;
+  font-size: 13px;
+}
+.costumer{
+  width: 128px;
+}
+.mail{
+  width: 190px;
+}
+.phone{
+  width: 131px;
+}
+.out{
+  width: 111px;
 }
