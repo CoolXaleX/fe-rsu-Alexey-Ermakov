@@ -1,0 +1,24 @@
+.text1,.text2{
+  height: 94px;
+  width: 334px;
+}
+.text1{
+  background-color: rgb(59, 142, 146);
+  color:white;
+  font-size: 32px;
+  font-weight: bold;
+}
+.text1>p{
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.text2{
+  margin-top: 23px;
+  background-color:rgb(202, 218, 204);
+  height: 110px;
+}
+.text2>p{
+  padding-left: 10px;
+  padding-top: 8px;
+
+}

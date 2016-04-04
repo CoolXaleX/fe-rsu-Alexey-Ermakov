@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'Open Sans Condensed';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans CondLight'), local('OpenSansCondensedLight'), url(http://themes.googleusercontent.com/static/fonts/opensanscondensed/v7/gk5FxslNkTTHtojXrkp-xF1YPouZEKgzpqZW9wN-3Ek.woff) format('woff');
+}
+
+div{
+  width: 330px;
+  margin: 25px auto;
+}
+
+h1 {
+  color: #333;
+  font-family: "Open Sans Condensed";
+  font-size: 2.5em;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+button{
+  width: 100px;
+  height: 100px;
+  color: #ffffff;
+  background-color: #3498db;
+  font-family: "Open Sans Condensed";
+  text-decoration: none;
+  font-size: 1.8em;
+  border: 2px #ffffff solid;
+  margin: 10px 0 0 5px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.highlight:hover{
+  background-color: #FFffff;
+  color: #3498db;
+}
+
+.fade:hover{
+  opacity: 0;
+}
+
+.boom:hover{
+  transform: scale(3,3);
+    opacity: 0;
+}
+
+.focus:hover {
+  border-width: 20px;
+}
+
+.rotate:hover{
+  transform: rotate(90deg);
+}
+
+.knit:hover{
+    height:0px;
+}
+
+.shrink:hover{
+    transform:scale(0,0);
+}
+
+.squeeze:hover{
+    transform: scale(1.5,0)
+}
+
+.deform:hover{
+    transform: skew(45deg,45deg)
+}
+img{
+  height: 200px;
+  width: 400px;
+  position: relative;
+  z-index: -2;
+}
+#img{
+  height: 200px;
+  width: 400px;
+  box-shadow: inset 0 0 20px 0 #000000;
+}
+
+.text1,.text2{
+  height: 200px;
+  width: 200px;
+}
+
+.text1{
+  background-color: rgb(59, 142, 146);
+}
+.text2{
+  background-color:rgb(202, 218, 204);
+}

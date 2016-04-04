@@ -1,0 +1,194 @@
+.circle{
+  background: radial-gradient(circle closest-side,#00c09b 60px, white 61px);
+  width: 300px;
+  height: 200px;
+  border: 2px solid #d3d0ca;
+}
+button{
+    background: linear-gradient(to top, #8991c3, #4f5ce5, #8991c3);
+    font-size: 16px;
+    padding: 10px 20px;
+    color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 20px;
+    width: 150px;
+    margin-top: 100px;
+    border: 4px double rgba(255, 255, 255, 0.91);
+    box-shadow: 0 0 4px 2px #c3f2f5;
+}
+@media all and (max-width:700px) and (min-width:300px){
+    .adaptive {
+        width:300px;
+        margin:0;
+    }
+}
+.adaptive{
+  background-color: #cad8d0;
+}
+.spinner {
+ width: 60px;
+ height: 100px;
+ margin: 100px auto;
+ position: relative;
+ list-style: none;
+ border-radius: 50%;
+ border: 1px solid rgba(150,150,150,0.5);
+}
+.spinner li {
+ width: 20px;
+ height: 20px;
+ position: absolute;
+ border-radius: 50%;
+}
+.spinner li:nth-child(1) {
+ background: #c10000;
+ top: 0;
+ left: 50%;
+ margin-left: -10px;
+ transform-origin: 50% 250%;
+ animation:
+ rota 1.13s linear infinite,
+ opa 3.67s ease-in-out infinite alternate;
+ box-shadow: 0 0 5px 5px rgba(0, 0, 0, 1)
+}
+.spinner li:nth-child(2) {
+ background: #00c108;
+ top: 0;
+ left: 50%;
+ margin-left: -10px;
+ transform-origin: 50% 250%;
+ animation:
+ rota 1.0s linear infinite,
+ opa 3.67s ease-in-out infinite alternate;
+ box-shadow: 0 0 5px 5px rgba(0, 0, 0, 1)
+}
+.spinner li:nth-child(3) {
+ background: #0047c1;
+ top: 0;
+ left: 50%;
+ margin-left: -10px;
+ transform-origin: 50% 250%;
+ animation:
+ rota 0.9s linear infinite,
+ opa 3.67s ease-in-out infinite alternate;
+ box-shadow: 0 0 5px 5px rgba(0, 0, 0, 1)
+}
+.spinner li:nth-child(4) {
+ background: #c1bf00;
+ top: 0;
+ left: 50%;
+ margin-left: -10px;
+ transform-origin: 50% 250%;
+ animation:
+ rota 1.2s linear infinite,
+ opa 3.67s ease-in-out infinite alternate;
+ box-shadow: 0 0 5px 5px rgba(0, 0, 0, 1)
+}
+@keyframes rota {
+ to { transform: rotate(360deg); }
+}
+@keyframes opa {
+ 12.0% { opacity: 0.80;box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.80)}
+ 19.5% { opacity: 0.88;box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.88) }
+ 37.2% { opacity: 0.64;box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.64) }
+ 40.5% { opacity: 0.52;box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.52) }
+ 52.7% { opacity: 0.69;box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.69) }
+ 60.2% { opacity: 0.60;box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.60) }
+ 66.6% { opacity: 0.52;box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.52) }
+ 70.0% { opacity: 0.63;box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.63) }
+ 79.9% { opacity: 0.60;box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.60) }
+ 84.2% { opacity: 0.75;box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.75) }
+ 91.0% { opacity: 0.87;box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.87) }
+}
+
+#balls{
+	position:relative;
+	width:118px;
+	height:41px;
+	margin:auto;
+  border-left: 20px solid black;
+  border-right: 20px solid black;
+}
+
+
+.ball{
+	background-color:rgb(255, 0, 0);
+	position:absolute;
+	top:0;
+	left:0;
+	width:41px;
+	height:41px;
+	border-radius:20px;
+	animation-name:move_ball;
+	animation-duration:1.105s;
+	animation-iteration-count:infinite;
+	animation-timing-function:linear;
+	animation-delay:0s;
+	transform:scale(0.5, 1);
+}
+
+@keyframes move_ball{
+	0%{
+		left:-10px;
+		transform:scale(0.5, 1);
+	}
+
+	25%{
+		left:29px;
+		transform:scale(1, 0.5);
+	}
+
+	50%{
+		left:88px;
+		transform:scale(0.5, 1);
+	}
+
+	75%{
+		left:29px;
+		transform:scale(1, 0.5);
+	}
+
+	100%{
+		left:-10px;
+		transform:scale(0.5, 1);
+	}
+}
+
+.infinite_animation{
+    margin: 3% auto;
+    height:10px;
+    width:10px;
+    border-radius: 50%;
+    background:linear-gradient(to top, #f00, #000);
+    animation: change_thing 4s infinite;
+}
+
+@keyframes change_thing{
+    0%{
+         border-radius: 50%;
+    }
+    20%{
+         border-radius: 0px;
+         border:solid 5px rgb(0,0,0);
+         top:+50px;
+    }
+    40%{
+       border: solid 10px #000;
+       box-shadow: 0 0 50px #f00;
+
+    }
+    60%{
+      border: 5px solid #000;
+      transform: skewX(-25deg);
+      height:200px;
+      width:150px;
+
+    }
+    80%{
+      border: solid 2px #000;
+      transform: rotate(-180deg);
+
+    }
+    100%{
+        background: linear-gradient(to bottom; #0131230;#FF2122);
+    }
