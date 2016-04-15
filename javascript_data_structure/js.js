@@ -157,6 +157,15 @@ function mergeArray(elem1, elem2){
 }
 console.log(mergeArray(mas1,mas2));
 // 14.	Write a JavaScript function to remove a specific element from an array
+function removeElement(element,arr){
+	for (var i = 0; i < arr.length-1; i++){
+		if (arr[i] == element){
+			arr.splice(i, 1);
+		}
+	}
+	return arr;
+}
+console.log(removeElement(15,[14,3,5,15,6,15,5]));
 // 15.	Write a JavaScript function to get a random item from an array
 // 16.	Write a JavaScript function to move an array element from one position to another
 // 17.	Write a JavaScript function to get difference between two dates in days
