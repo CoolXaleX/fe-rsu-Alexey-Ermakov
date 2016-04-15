@@ -138,6 +138,24 @@ for(var i = 0; i < people.length; i++) {
   console.log(people[i]);
 }
 // 13.	Write a JavaScript function to merge two arrays and removes all duplicates elements
+var mas1 = [1,2,3,4];
+var mas2 = [2,4,"ghdbtn","hi"];
+function mergeArray(elem1, elem2){
+  for (var i = 0; i < elem2.length; i++){
+    elem1.push(elem2[i]);
+  }
+  for (var i = 0; i < elem1.length; i++){
+    for (var j = 0; j < elem1.length; j++){
+        if ( i != j ){
+          if (elem1[i] == elem1[j]){
+            elem1.splice(j, 1);
+          }
+      }
+    }
+  }
+  return elem1
+}
+console.log(mergeArray(mas1,mas2));
 // 14.	Write a JavaScript function to remove a specific element from an array
 // 15.	Write a JavaScript function to get a random item from an array
 // 16.	Write a JavaScript function to move an array element from one position to another
