@@ -167,6 +167,10 @@ function removeElement(element,arr){
 }
 console.log(removeElement(15,[14,3,5,15,6,15,5]));
 // 15.	Write a JavaScript function to get a random item from an array
+function randomEl(arr){
+  return arr[Math.round(Math.random( ) * (arr.length-1))];
+}
+console.log(randomEl([14,3,5,15,6,15,5]));
 // 16.	Write a JavaScript function to move an array element from one position to another
 // 17.	Write a JavaScript function to get difference between two dates in days
 // 18.	Write a JavaScript function to get the maximum date from an array of dates
