@@ -23,6 +23,8 @@ switch (now.getDay()) {
         alert("Today is: Saturday");
         break;
 }
+var arrayDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+console.log("Today is: " + arrayDay[now.getDay()]);
 // 2.	Write a JavaScript program to get the current date.
 console.log("current date: " + now.toString());
 // 3.	Write a JavaScript program to find 1st January be a Sunday between 2014 and 2050.
@@ -88,7 +90,7 @@ console.log(newUpperString("hello"));
 var stringArray = ["String", "stRingxx", "strIng", "sTring"];
 for (var i = 0; i < stringArray.length; i++) {
     for (var j = 0; j < stringArray.length; j++) {
-        if (i != j && stringArray[j] != undefined && stringArray[i] != undefined) {
+        if (i != j && stringArray[j] !== undefined && stringArray[i] !== undefined) {
             if (stringArray[i].toUpperCase() == stringArray[j].toUpperCase()) {
                 stringArray.splice(j, 1);
             }
@@ -101,7 +103,7 @@ var n = 0;
 while (2 * n <= a.length) {
     var c = a[2 * n];
     n++;
-    if (a[2 * n] != undefined) {
+    if (a[2 * n] !== undefined) {
         a[2 * (n - 1)] = a[2 * n];
         a[2 * n] = c;
     }
@@ -113,11 +115,11 @@ function removeElem(mass) {
     var rezMas = [];
     var k = 0;
     for (var i = 0; i < mass.length - 1; i++) {
-        if (mass[i] != null) {
-            if (mass[i] != 0) {
-                if (mass[i] != false) {
-                    if (mass[i] != "") {
-                        if (mass[i] != undefined) {
+        if (mass[i] !== null) {
+            if (mass[i] !== 0) {
+                if (mass[i] !== false) {
+                    if (mass[i] !== "") {
+                        if (mass[i] !== undefined) {
                             if (!(isNaN(mass[i])) || typeof mass[i] == "string") {
                                 rezMas[k] = mass[i];
                                 k++;
@@ -170,7 +172,7 @@ function mergeArray(elem1, elem2) {
     for (var i = 0; i < elem2.length; i++) {
         elem1.push(elem2[i]);
     }
-    for (var i = 0; i < elem1.length; i++) {
+    for (i = 0; i < elem1.length; i++) {
         for (var j = 0; j < elem1.length; j++) {
             if (i != j) {
                 if (elem1[i] == elem1[j]) {
@@ -179,7 +181,7 @@ function mergeArray(elem1, elem2) {
             }
         }
     }
-    return elem1
+    return elem1;
 }
 console.log(mergeArray(mas1, mas2));
 // 14.	Write a JavaScript function to remove a specific element from an array
@@ -239,8 +241,8 @@ function convertIntoArrayWords(str) {
     var arr1 = str.split(" ");
     return arr1;
 }
-console.log(convertIntoArrayWords("Приве привет привеТ"))
-    // 20.	Write a JavaScript function to capitalize the first letter of a string
+console.log(convertIntoArrayWords("Приве привет привеТ"));
+// 20.	Write a JavaScript function to capitalize the first letter of a string
 function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
@@ -253,6 +255,16 @@ console.log(capitalizeFirstLetter("привет"));
 // "JavaScript"
 // "javaScript"
 // "JavaScriptExercises"
+
+function camelize(str) {
+    return str.replace(/^([A-Z])|[\s-_](\w)/g, function(match, p1, p2, offset) {
+        if (p2) return p2.toUpperCase();
+        return p1.toLowerCase();
+    });
+}
+console.log(camelize("Java Script"));
+console.log(camelize("java-script"));
+console.log(camelize("Java Script Exercises"));
 
 // 22.	Write a JavaScript function to find the highest value in an array
 function maxValueInArray(arr2) {
@@ -278,22 +290,69 @@ function minValueInArray(arr3) {
 console.log(minValueInArray([14, 3, 5, 15, 6, 16, 5]));
 // 24.	Write a JavaScript function to check to check whether a variable is numeric or not
 function isNumeric(num) {
-  return !isNaN(parseFloat(num)) && isFinite(num);
+    return !isNaN(parseFloat(num)) && isFinite(num);
 }
 console.log(isNumeric(12));
 console.log(isNumeric('abcd'));
 console.log(isNumeric('12'));
 console.log(isNumeric(' '));
 console.log(isNumeric(1.20));
-console.log(isNumeric(-200)); 
+console.log(isNumeric(-200));
 // 25.	Write a JavaScript function to calculate the sum of values in an array
-function sumElements(arr4){
-  var sum = 0;
-  for (var i = 0; i < arr4.length - 1; i++) {
-      sum += arr4[i];
-  }
-  return sum;
+function sumElements(arr4) {
+    var sum = 0;
+    for (var i = 0; i < arr4.length - 1; i++) {
+        sum += arr4[i];
+    }
+    return sum;
 }
 console.log(sumElements([14, 3, 5, 15, 6, 16, 5]));
 // 26.	Write a JavaScript program to get the length of a JavaScript object
+function isEmpty(obj) {
+    for (var key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+var country = {
+    name: "Германия",
+    language: "немецкий",
+    capital: {
+        name: "Берлин",
+        population: 3375000,
+        year: {
+            bild: 1000,
+            end: 2016
+        }
+    }
+};
+var count = 0;
+var getLengthObj = function(obj) {
+    if ((!isEmpty(obj)) && (typeof obj !== "string")) {
+        for (var key in obj) {
+            if (obj.hasOwnProperty(key)) {
+                count++;
+                getLengthObj(obj[key]);
+            }
+        }
+    }
+};
+
+getLengthObj(country);
+console.log(count);
 // 27.	Write a JavaScript program to list the properties of a JavaScript object
+var getKeys = function getKeys(obj) {
+    if ((!isEmpty(obj)) && (typeof obj !== "string")) {
+        for (var key in obj) {
+            if (obj.hasOwnProperty(key)) {
+                console.log(key);
+                getKeys(obj[key]);
+            }
+        }
+    }
+};
+
+getKeys(country);
